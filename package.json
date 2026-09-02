@@ -1,0 +1,44 @@
+{
+  "name": "web",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "postinstall": "prisma contract emit",
+    "seed": "tsx prisma/seed.ts",
+    "contract:emit": "prisma contract emit"
+  },
+  "dependencies": {
+    "@prisma/client": "^7.10.0",
+    "@prisma/orm-postgres": "^8.0.0-rc.8",
+    "@types/pg": "^8.23.1",
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^17.4.2",
+    "framer-motion": "^12.29.2",
+    "jose": "^6.2.10",
+    "lucide-react": "^0.564.0",
+    "next": "16.1.6",
+    "pg": "^8.23.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@prisma/cli-engine": "^0.2.3",
+    "@tailwindcss/postcss": "^4",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "prisma": "^8.0.0-rc.10",
+    "tailwindcss": "^4",
+    "tsx": "^4.19.3",
+    "typescript": "^5"
+  }
+}
